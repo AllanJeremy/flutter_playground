@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'custom_tile.dart';
+import 'custom_divider.dart';
 
 void main() => runApp(new MyApp());
 
@@ -10,37 +12,54 @@ class MyApp extends StatelessWidget
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-            title: Text('App title'),
+            title: Text('Services on Demand'),
             actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.add_alert),
+                icon: Icon(Icons.add_shopping_cart),
                 iconSize: 24.0,
                 color: Colors.white,
                 onPressed: printHello,
               )
             ],
           ),
-          body: Container(
-            margin: EdgeInsets.symmetric(vertical: 40.0),
-            child: Center(
-              child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  MyRectangle(
-                    width:300.0,
-                    height:200.0,
-                    text:'I love black',
-                    color: Colors.black87,
-                  ),
-                  MyRectangle(
-                    width:300.0,
-                    height:200.0,
-                    text:'I love blue',
-                    color: Colors.blue,
-                  ),
-                ]
-              )
-            ),
+          body: new ListView(
+            children: <Widget>[
+              CustomTile(
+                color: Colors.orangeAccent,
+                text:'Fast food',
+                icon:Icons.fastfood
+              ),
+              CustomDivider(),
+              CustomTile(
+                color: Colors.blue,
+                text:'Hotels',
+                icon:Icons.hotel
+              ),
+              CustomDivider(),
+              CustomTile(
+                color: Colors.greenAccent,
+                text:'Traveling',
+                icon:Icons.card_travel
+              ),
+              CustomDivider(),
+              CustomTile(
+                color: Colors.purple[200],
+                text:'Shopping',
+                icon:Icons.shopping_cart
+              ),
+              CustomDivider(),
+              CustomTile(
+                color: Colors.black87,
+                text:'WiFi',
+                icon:Icons.wifi
+              ),
+              CustomDivider(),
+              CustomTile(
+                color: Colors.red[400],
+                text:'Meetups',
+                icon:Icons.streetview
+              ),
+            ]
           )
         )
       );
@@ -75,6 +94,7 @@ class MyRectangle extends StatelessWidget
     );
   }
 }
+
 
 //Prints hello to the screen
 void printHello()
