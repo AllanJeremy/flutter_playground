@@ -25,37 +25,43 @@ class MyApp extends StatelessWidget
           body: new ListView(
             children: <Widget>[
               CustomTile(
-                color: Colors.orangeAccent,
+                color: Colors.orange[600],
+                iconColor: Colors.orange[300],
                 text:'Fast food',
                 icon:Icons.fastfood
               ),
               CustomDivider(),
               CustomTile(
-                color: Colors.blue,
+                color: Colors.blue[600],
+                iconColor: Colors.blue[300],
                 text:'Hotels',
                 icon:Icons.hotel
               ),
               CustomDivider(),
               CustomTile(
-                color: Colors.greenAccent,
+                color: Colors.green[600],
+                iconColor: Colors.green[300],
                 text:'Traveling',
                 icon:Icons.card_travel
               ),
               CustomDivider(),
               CustomTile(
-                color: Colors.purple[200],
+                color: Colors.purple[600],
+                iconColor: Colors.purple[300],
                 text:'Shopping',
                 icon:Icons.shopping_cart
               ),
               CustomDivider(),
               CustomTile(
-                color: Colors.black87,
+                color: Colors.blueGrey[600],
+                iconColor: Colors.blueGrey[300],
                 text:'WiFi',
                 icon:Icons.wifi
               ),
               CustomDivider(),
               CustomTile(
-                color: Colors.red[400],
+                color: Colors.red[600],
+                iconColor: Colors.red[300],
                 text:'Meetups',
                 icon:Icons.streetview
               ),

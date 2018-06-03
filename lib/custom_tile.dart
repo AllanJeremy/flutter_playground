@@ -6,11 +6,12 @@ class CustomTile extends StatelessWidget
   final IconData icon;
   final String text;
   final Color color;
+  final Color iconColor;
 
   final double  height = 100.0;
   final double borderRadius = 50.0;
 
-  CustomTile({this.icon,this.text,this.color});
+  CustomTile({this.icon,this.text,this.color,this.iconColor});
 
   @override
   Widget build(BuildContext context)
@@ -33,7 +34,7 @@ class CustomTile extends StatelessWidget
                 padding: EdgeInsets.all(16.0),
                 child: Icon(
                   this.icon,
-                  color:this.color,
+                  color:this.iconColor,
                   size: 60.0,
                 ),
               ),
