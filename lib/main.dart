@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'custom_tile.dart';
-import 'custom_divider.dart';
-import 'counter.dart';
+import 'components/custom_tile.dart';
+import 'components/custom_divider.dart';
+import 'components/counter.dart';
 
 void main() => runApp(new MyApp());
 
@@ -13,12 +13,20 @@ class MyApp extends StatelessWidget
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Services on Demand'),
+            elevation: 0.0,
+            backgroundColor: Colors.grey[200],
+            title: Text(
+              'Services on Demand',
+              style: TextStyle(
+                fontSize: 24.0,
+                color: Colors.black87,
+              ),
+            ),
             actions: <Widget>[
               IconButton(
                 icon: Icon(Icons.add_shopping_cart),
                 iconSize: 24.0,
-                color: Colors.white,
+                color: Colors.blueGrey,
                 onPressed: printHello,
               )
             ],

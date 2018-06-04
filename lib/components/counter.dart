@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 class Counter extends StatefulWidget
 {
   @override 
-  CounterState createState() => new CounterState();
+  _CounterState createState() => new _CounterState();
 }
 
 //State class
-class CounterState extends State
+class _CounterState extends State<Counter>
 {
   int counter = 0;
 
