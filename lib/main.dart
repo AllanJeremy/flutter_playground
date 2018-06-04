@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'custom_tile.dart';
 import 'custom_divider.dart';
+import 'counter.dart';
 
 void main() => runApp(new MyApp());
 
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget
           ),
           body: new ListView(
             children: <Widget>[
+              Counter(),
               CustomTile(
                 color: Colors.orange[600],
                 iconColor: Colors.orange[300],
