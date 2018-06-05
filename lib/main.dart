@@ -4,7 +4,6 @@ import 'components/custom_divider.dart';
 import 'components/counter.dart';
 
 void main() => runApp(new MyApp());
-
 class MyApp extends StatelessWidget
 {
   @override
