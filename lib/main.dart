@@ -22,12 +22,27 @@ class MyApp extends StatelessWidget
               ),
             ),
             actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.add_shopping_cart),
-                iconSize: 24.0,
-                color: Colors.blueGrey,
-                onPressed: printHello,
-              )
+              PopupMenuButton(
+                onSelected: _handleSelected,
+                itemBuilder: (BuildContext context) => <PopupMenuEntry>[
+                  PopupMenuItem(
+                    value:'val1',
+                    child: Text('Value 1'),
+                  ),
+                  PopupMenuItem(
+                    value:'val2',
+                    child: Text('Value 2'),
+                  ),
+                  PopupMenuItem(
+                    value:'val3',
+                    child: Text('Value 3'),
+                  ),
+                  PopupMenuItem(
+                    value:'val4',
+                    child: Text('Value 4'),
+                  ),
+                ],
+              ),
             ],
           ),
           body: new ListView(
@@ -75,9 +90,13 @@ class MyApp extends StatelessWidget
                 icon:Icons.streetview
               ),
             ]
-          )
-        )
+          ),
+          
+        ),
       );
+  }
+
+  void _handleSelected(value) {
   }
 }
 
