@@ -1,8 +1,5 @@
-# flutter_playground
+# My flutter playground
 
-A new Flutter project.
+I will be learning from the udacity course and posting the stuff I learn there here.
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+I'll probably do be posting the other concepts I learn from docs too
